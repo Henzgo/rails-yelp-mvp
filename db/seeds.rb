@@ -5,8 +5,14 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-Restaurant.create(name: 'Puro', address: 'Bahnhofsstrasse 5', category: 'french')
-Restaurant.create(name: 'BurgerMeister', address: 'Sihlquai 3', category: 'belgian')
-Restaurant.create(name: 'Fujiya of Japan', address: 'Enge', category: 'japanese')
-Restaurant.create(name: 'Chopsticks', address: 'Niederdoerfli', category: 'chinese')
-Restaurant.create(name: 'Santa Lucia', address: 'Theaterstrasse 7', category: 'italian')
+puro = Restaurant.create(name: 'Puro', address: 'Bahnhofsstrasse 5', phone_number: '079 234 56 23', category: 'french')
+burger_meister = Restaurant.create(name: 'BurgerMeister', address: 'Sihlquai 3', phone_number: '079 234 56 32', category: 'belgian')
+fujiya_of_japan = Restaurant.create(name: 'Fujiya of Japan', address: 'Enge', phone_number: '079 234 56 78', category: 'japanese')
+chopstick = Restaurant.create(name: 'Chopsticks', address: 'Niederdoerfli', phone_number: '079 234 56 11', category: 'chinese')
+santa_lucia = Restaurant.create(name: 'Santa Lucia', address: 'Theaterstrasse 7', phone_number: '079 234 56 39', category: 'italian')
+
+puro.save!
+burger_meister.save!
+fujiya_of_japan.save!
+chopstick.save!
+santa_lucia.save!
